@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoR Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+</head>
+<body>
+  <div class="app">
+    <aside class="rail">
+      <div id="railControls"></div>
+    </aside>
+
+    <div class="content">
+      <main id="main"></main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalText">
+      <p id="modalText"></p>
+      <div id="modalErr" class="err"></div>
+      <div class="actions">
+        <button class="btn" id="mCancel">Cancel</button>
+        <button class="btn success" id="mOk">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js?v=20"></script>
+  <script src="app.js?v=20"></script>
+</body>
+</html>
